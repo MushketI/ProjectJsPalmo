@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__logo">
+          <div class="logo">
+            <img class="logo__png" src="image/logo .png" alt="" />
+          </div>
+          <div class="title__header">
+            <h2>New Balance</h2>
+            <p>Лучшие кроссовки</p>
+          </div>
+        </div>
+        <div class="header__cart">
+          <div class="links__cart">
+            <a class="link_png" id="btnOrder" href="#">
+              <img class="link_png" src="image/cart.png" alt="cart" />
+              <sup class="sup"></sup>
+            </a>
+            <a class="link_png" href="#"
+              ><img class="link_png" src="image/user.png" alt="user"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="section">
+        <h1 class="section__title">Все кроссовки</h1>
+      </div>
+      <div class="products"></div>
+    </main>
+    <div class="basket hide">
+      <div class="cart__wrapper ">
+        <div class="cart__products">
+        </div>
+        <div class="cart__info">
+          <div class="cart__total">
+            <h2 class="total__text">Total:</h2>
+            <button class="btn__back" id="btn__back">
+              <img class="logout__img" src="image/logout.png" alt="img">
+            </button>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="script.js"></script>
+</html>
