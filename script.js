@@ -95,7 +95,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     content.addEventListener("click", (e) => {
       if (e.target.tagName == "BUTTON") {
         let cart = e.target.closest(".cart")
-
         let id = cart.querySelector("input").value
 
         let obj = {
@@ -156,6 +155,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         item.querySelector(".cart__delete").addEventListener("click", () => {
           let cartId = item.querySelector("input").value
           let newArr = arr.filter((item) => item.id !== cartId)
+          order = newArr
 
           localStorage.setItem("order", JSON.stringify(newArr))
 
